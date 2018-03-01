@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<configuration>
+  <property>
+     <name>mapred.reduce.tasks</name>
+     <value>1</value>
+  </property>
+
+  <!--property>
+	<name>mapreduce.output.fileoutputformat.outputdir</name>
+	<value>/group/doodod/test/output</value>
+  </property-->
+
+  <property>
+    <name>mapred.reduce.slowstart.completed.maps</name>
+    <value>0.9</value>
+    <description></description>
+  </property>
+
+  <property>
+    <name>mongo.collection.trace</name>
+    <value>user_trace</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.trace.id</name>
+    <value>customer_id</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.trace.mallid</name>
+    <value>mall_id</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.trace.x</name>
+    <value>trace_x</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.trace.y</name>
+    <value>trace_y</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.trace.z</name>
+    <value>trace_z</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.trace.list</name>
+    <value>customer_list</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.trace.time</name>
+    <value>create_time</value>
+  </property>
+</configuration>
+

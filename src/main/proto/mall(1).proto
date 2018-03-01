@@ -1,0 +1,52 @@
+package doododmsg;
+option java_package = "com.doodod.mall.message";
+
+message Customer {
+  optional bytes    phone_mac   = 1; // 顾客手机的 mac 地址
+  repeated Location location    = 2; // 顾客位置
+  optional UserType user_type   = 3; // 顾客的类型 
+  repeated Visit    user_visit  = 4; // 顾客到商场的记录 
+  optional bytes    phone_brand = 5; // 顾客手机的品牌 
+}
+
+message Location {
+  optional uint64 planar_graph = 1; // 楼层id
+  optional double location_x   = 2; // 坐标x
+  optional double location_y   = 3; // 坐标y
+  repeated uint64 time_stamp   = 4; // hbase记录的时间戳
+  repeated uint64 client_time  = 5; // 设备记录的时间戳
+  optional bytes  position_sys = 6; // 定位系统
+  optional int32  shop_id      = 7; // 点所属的店铺id
+  optional int32  shop_cat     = 8; // 店铺的类别
+  optional int32  mall_id      = 9; // 商场id
+  optional bytes  shop_name    = 10; // 店铺名字
+}
+
+enum UserType {
+  CUSTOMER  = 0;
+  PASSENGER = 1;
+  EMPLOYEE  = 2;
+  MACHINE   = 3;
+}
+
+message Flow {
+  optional uint64 planar_graph = 1; // 楼层id
+  optional int32  shop_id      = 2; // 店铺id
+  repeated bytes  phone_mac    = 3; // 顾客手机的 mac 地址
+  optional int32  shop_cat     = 4; // 店铺类型
+  repeated int32  floor_visits = 5; // 顾客访问其他楼层的次数
+  repeated int32  shop_visits  = 6; // 顾客访问其他店铺的次数
+  repeated int32  zone_visits  = 7; // 顾客访问其他区域的次数
+  optional int32  mall_id      = 8; // 商场id
+}
+
+message Visit {
+  optional uint64 planar_graph = 1; // 楼层id
+  optional int32  shop_id      = 2; // 店铺id
+  optional int32  shop_cat     = 3; // 店铺类型
+  repeated uint64 visit_date   = 4; // 到来的日期
+  optional int32  mall_id      = 5; // 商场id
+  optional int32  zone_id      = 6; // 区域id
+  
+}
+

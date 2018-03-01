@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<configuration>
+  <property>
+     <name>mapred.reduce.tasks</name>
+     <value>1</value>
+  </property>
+
+  <!--property>
+	<name>mapreduce.output.fileoutputformat.outputdir</name>
+	<value>/group/doodod/test/output</value>
+  </property-->
+
+  <property>
+    <name>mapred.reduce.slowstart.completed.maps</name>
+    <value>0.9</value>
+    <description></description>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit</name>
+    <value>user_visit</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.id</name>
+    <value>id</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.tag</name>
+    <value>type</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.time</name>
+    <value>create_time</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.times</name>
+    <value>visit_times</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.timesdis</name>
+    <value>visit_times_dis</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.freq</name>
+    <value>visit_freq</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.freqdis</name>
+    <value>visit_freq_dis</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.tagtype</name>
+    <value>0</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.newcust</name>
+    <value>new_client</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.oldcust</name>
+    <value>old_client</value>
+  </property>
+</configuration>
+

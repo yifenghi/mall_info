@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<configuration>
+  <property>
+     <name>mapred.reduce.tasks</name>
+     <value>1</value>
+  </property>
+
+  <!--property>
+	<name>mapred.input.dir</name>
+	<value>/group/doodod/test/tmp*</value>
+  </property>
+
+  <property>
+	<name>mapreduce.output.fileoutputformat.outputdir</name>
+	<value>/group/doodod/test/output</value>
+  </property-->
+
+  <property>
+    <name>mapred.reduce.slowstart.completed.maps</name>
+    <value>0.9</value>
+    <description></description>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit</name>
+    <value>user_visit</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.id</name>
+    <value>id</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.tag</name>
+    <value>type</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.time</name>
+    <value>create_time</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.dwell</name>
+    <value>avg_dwell</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.dwelldis</name>
+    <value>avg_dwell_dis</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.floor</name>
+    <value>visit_floors</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.visit.floordis</name>
+    <value>visit_floors_dis</value>
+  </property>
+
+</configuration>
+

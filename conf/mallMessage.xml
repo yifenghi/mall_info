@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<configuration>
+  <property>
+    <name>hbase.zookeeper.quorum</name>
+    <value>hadoop2.palmaplus.com,hadoop3.palmaplus.com,hadoop4.palmaplus.com</value>
+  </property>
+
+  <property>
+	<name>mapred.reduce.tasks</name>
+	<value>1</value>
+  </property>
+
+  <!--property>
+	<name>mapred.input.dir</name>
+	<value>/group/doodod/test/tmp*</value>
+  </property>
+
+  <property>
+	<name>mapreduce.output.fileoutputformat.outputdir</name>
+	<value>/group/doodod/test/output</value>
+  </property-->
+
+  <property>
+    <name>mapred.reduce.slowstart.completed.maps</name>
+    <value>0.9</value>
+    <description></description>
+  </property>
+
+  <!--property>
+    <name>mapred.child.java.opts</name>
+    <value>-Xmx1700m</value>
+    <description></description>
+  </property>
+
+  <property>
+    <name>train.passenger.featurelist</name>
+    <value>0</value>
+  </property-->
+</configuration>
+

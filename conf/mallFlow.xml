@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<configuration>
+  <property>
+     <name>mapred.reduce.tasks</name>
+     <value>1</value>
+  </property>
+
+  <!--property>
+	<name>mapred.input.dir</name>
+	<value>/group/doodod/test/tmp*</value>
+  </property>
+
+  <property>
+	<name>mapreduce.output.fileoutputformat.outputdir</name>
+	<value>/group/doodod/test/output</value>
+  </property-->
+
+  <property>
+    <name>mapred.reduce.slowstart.completed.maps</name>
+    <value>0.9</value>
+    <description></description>
+  </property>
+
+  <property>
+    <name>mongo.collection.mall</name>
+    <value>mall_traffic</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.mall.id</name>
+    <value>mall_id</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.mall.tag</name>
+    <value>time_tag</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.mall.time</name>
+    <value>create_time</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.mall.number</name>
+    <value>customer_num</value>
+  </property>
+
+</configuration>
+
